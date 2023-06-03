@@ -1,0 +1,189 @@
+@media only screen and (max-width: 1294px) {
+    body {
+        background-color: skyblue;
+    }
+
+    .lable label {
+        font-size: 1.5em;
+    }
+
+    .input input {
+        width: 14rem;
+        height: 2rem;
+        padding-left: 0.5rem;
+        border-radius: 7px;
+    }
+
+    .phone-number input {
+        width: 11rem;
+        height: 2rem;
+        padding-left: 1rem;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-left: none;
+        border-width: 2px;
+    }
+
+    .headline {
+        padding: 3% 8%;
+        font-size: 2rem;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 1rem 1rem;
+    }
+
+    .btn {
+        width: 8rem;
+        border-radius: 0.5rem;
+        background-color: rgb(45, 177, 229);
+        color: white;
+        font-size: 1.2rem;
+        height: 2rem;
+        border: none;
+        padding: inherit;
+        margin: 1.5rem 0px;
+    }
+
+    .formPage {
+        background-color: white;
+        width: 76vw;
+        height: 80vh;
+        border-radius: 12px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: skyblue;
+    }
+
+    .headline {
+        padding: 1rem 2rem;
+        font-size: 2rem;
+    }
+
+    .lable label {
+        font-size: 1.5rem;
+    }
+
+    .input input {
+        width: 12rem;
+        height: 2rem;
+        padding-left: 1rem;
+        border-radius: 5px;
+    }
+
+    .phone-number input {
+        width: 9rem;
+        height: 2rem;
+        padding-left: 1rem;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-left: none;
+        border-width: 2px;
+    }
+
+    .country-code {
+
+        width: 3rem;
+        height: 2.2rem;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 1rem 1rem;
+    }
+
+    .btn {
+        width: 9rem;
+        border-radius: 7px;
+        background-color: rgb(45, 177, 229);
+        color: white;
+        font-size: 1.2rem;
+        border: none;
+        padding: 0.2rem;
+        margin: 1.5rem 0px;
+    }
+
+    .formPage {
+        background-color: white;
+        width: 95vw;
+        height: 70vh;
+        border-radius: 12px;
+    }
+}
+
+
+@media only screen and (max-width: 415px) {
+    body {
+        background-color: skyblue;
+    }
+
+    .formPage {
+        background-color: white;
+        width: 90vw;
+        height: 85vh;
+        border-radius: 12px;
+    }
+
+    .row {
+        flex-flow: column;
+        align-items: start;
+        margin: 0.5rem 0.2rem;
+    }
+
+    .input input {
+        width: 12rem;
+        height: 2rem;
+        padding-left: 1rem;
+        border-radius: 9px;
+        margin: 0.5rem 0rem;
+    }
+
+    .phone-number input {
+        width: 9rem;
+        height: 2rem;
+
+    }
+
+    .phone-number {
+        display: flex;
+    }
+
+    .country-code {
+        width: 3rem;
+        height: 2.2rem;
+    }
+
+    .lable label {
+        font-size: 1.1rem;
+    }
+
+    .headline {
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        width: 7rem;
+        border-radius: 5px;
+        background-color: rgb(45, 177, 229);
+        color: white;
+        font-size: 1rem;
+        border: none;
+        padding: 0.2rem;
+        margin: 1rem 1rem;
+    }
+
+    .dark {
+        display: none;
+    }
+}

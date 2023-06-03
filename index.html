@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign-up form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <nav class="menu">
+        <ul class="menu-items">
+            <li id="line-1">Home</li>
+            <li id="line-3">Contact</li>
+            <li id="line-2">About</li>
+        </ul>
+        <div class="toggle">
+            <label for="switch" class="dark">Dark mode</label>
+            <label class="switch">
+                <input type="checkbox" name="switch">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </nav>
+
+    <section class="sign-up-form" id="SignUp">
+        <div class="formPage" id="formbackground">
+            <h1 class="headline" id="heading">Sign up form</h1>
+            <form action="" class="form" id="form" name="myForm" onsubmit="return validateForm()" method="post">
+                <!-- Username -->
+                <div class="row">
+                    <div class="lable">
+                        <label for="Username">Username:</label>
+                    </div>
+                    <div class="input" id="name">
+                        <input type="text" name="fname" min="5" max="20" class="darkinput" placeholder="Username"
+                            required>
+                    </div>
+                </div>
+                <!-- DOB -->
+                <div class="row">
+                    <div class="lable">
+                        <label for="DOB">Date of brith:</label>
+                    </div>
+                    <div class="input" id="birth">
+                        <input type="date" name="DOB" class="darkinput" placeholder="Date of brith" required>
+                    </div>
+                </div>
+                <!-- password -->
+                <div class="row">
+                    <div class="lable">
+                        <label for="Password">Password:</label>
+                    </div>
+                    <div class="input" id="pass">
+                        <input type="password" name="fpass" class="darkinput" min="7" max="12" placeholder="Password"
+                            required>
+                    </div>
+                </div>
+                <!-- phone number -->
+                <div class="row">
+                    <div class="lable">
+                        <label for="phone">Phone Number:</label>
+                    </div>
+                    <div class="phone-number" id="phone">
+                        <select class="country-code" class="darkinput">
+                            <option value="+91">+91 (India)</option>
+                            <option value="+1">+1 (USA)</option>
+                            <option value="+44">+44 (UK)</option>
+                            <option value="+61">+61 (Australia)</option>
+                        </select>
+                        <input type="tel" name="fphone" class="darkinput" min="10" max="10" placeholder="Phone Number"
+                            required>
+
+                    </div>
+                </div>
+                <!-- email -->
+                <div class="row">
+                    <div class="lable">
+                        <label for="Email">Email:</label>
+                    </div>
+                    <div class="input" id="email">
+                        <input type="email" name="Email" class="darkinput" placeholder="xyz@email.com" required>
+                    </div>
+                </div>
+
+                <input type="submit" value="submit" class="btn">
+            </form>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
