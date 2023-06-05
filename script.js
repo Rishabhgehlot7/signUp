@@ -106,7 +106,7 @@ function validateForm() {
     Swal.fire({
       icon: 'error',
       title: 'Invalid Date of Birth!',
-      text: 'Please enter a valid date of birth in the format yyyy-mm-dd, and the applicant must be at least 10 years old',
+      text: 'Please enter a valid date of birth, and the applicant must be at least 10 years old',
     });
     valid = false;
     return; 
