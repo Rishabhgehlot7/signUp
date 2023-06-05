@@ -53,7 +53,7 @@ function validateForm() {
       text: 'Length should be between 5 and 20 characters!',
     });
     valid = false;
-    return; // Stop validation for other fields
+    return; 
   }
 
   // Phone number
@@ -65,7 +65,7 @@ function validateForm() {
       text: 'Phone number must be 10 digits',
     });
     valid = false;
-    return; // Stop validation for other fields
+    return; 
   } else if (/^0+$/.test(phoneNumber)) {
     Swal.fire({
       icon: 'error',
@@ -73,7 +73,7 @@ function validateForm() {
       text: 'Phone number must not consist of all zeros',
     });
     valid = false;
-    return; // Stop validation for other fields
+    return; 
   }
 
   // Password
@@ -85,7 +85,7 @@ function validateForm() {
       text: 'Password must be between 7 and 12 characters and include at least one lowercase letter, one uppercase letter, and one digit',
     });
     valid = false;
-    return; // Stop validation for other fields
+    return;
   }
 
   // Email
@@ -97,7 +97,7 @@ function validateForm() {
       text: 'Please enter a valid email address with a popular domain (e.g., Gmail, Yahoo, Hotmail)',
     });
     valid = false;
-    return; // Stop validation for other fields
+    return; 
   }
 
   // Date of Birth
@@ -106,10 +106,10 @@ function validateForm() {
     Swal.fire({
       icon: 'error',
       title: 'Invalid Date of Birth!',
-      text: 'Please enter a valid date of birth, and the applicant must be at least 10 years old',
+      text: 'Please enter a valid date of birth in the format yyyy-mm-dd, and the applicant must be at least 10 years old',
     });
     valid = false;
-    return; // Stop validation for other fields
+    return; 
   }
 
   Swal.fire({
@@ -140,7 +140,7 @@ function validateDateOfBirth(dateString) {
   if (dateOfBirth.toString() === 'Invalid Date') return false;
 
   const currentDate = new Date();
-  currentDate.setHours(0, 0, 0, 0); // Set time to 00:00:00
+  currentDate.setHours(0, 0, 0, 0); 
 
   if (dateOfBirth > currentDate) {
     Swal.fire({
