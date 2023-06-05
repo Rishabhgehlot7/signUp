@@ -106,7 +106,7 @@ function validateForm() {
     Swal.fire({
       icon: 'error',
       title: 'Invalid Date of Birth!',
-      text: 'Please enter a valid date of birth in the format dd-mm-yyyy, and the applicant must be at least 10 years old',
+      text: 'Please enter a valid date of birth, and the applicant must be at least 10 years old',
     });
     valid = false;
     return; // Stop validation for other fields
@@ -130,11 +130,11 @@ function validateDateOfBirth(dateString) {
   const parts = dateString.split("-");
   if (parts.length !== 3) return false;
 
-  const day = parseInt(parts[0], 10);
+  const year = parseInt(parts[0], 10);
   const month = parseInt(parts[1], 10) - 1;
-  const year = parseInt(parts[2], 10);
+  const day = parseInt(parts[2], 10);
 
-  if (isNaN(day) || isNaN(month) || isNaN(year)) return false;
+  if (isNaN(year) || isNaN(month) || isNaN(day)) return false;
 
   const dateOfBirth = new Date(year, month, day);
   if (dateOfBirth.toString() === 'Invalid Date') return false;
@@ -160,6 +160,7 @@ function validateDateOfBirth(dateString) {
 
   return ageDiff >= 10;
 }
+
 
 document.forms['myForm'].addEventListener('submit', function(event) {
   event.preventDefault();
